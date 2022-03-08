@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import ReactDOM from "react-dom";
 
-function App() {
+import "bootstrap/dist/css/bootstrap.min.css";
+import $ from "jquery";
+import Popper from "popper.js";
+import "bootstrap/dist/js/bootstrap.bundle.min";
+
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+import Homepage from "./Homepage/Homepage";
+import Price from "./Prices/Price";
+import AboutUs from "./AboutUs/AboutUs";
+import ContactUs from "./ContactUs/ContactUs";
+import Faqs from "./Faqs/Faqs";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<Homepage />}></Route>
+        <Route path="/price" element={<Price />}></Route>
+        <Route path="/about-us" element={<AboutUs />}></Route>
+        <Route path="/contact-us" element={<ContactUs />}></Route>
+        <Route path="/faq" element={<Faqs />}></Route>
+      </Routes>
+    </Router>
   );
 }
 
-export default App;
+export default App

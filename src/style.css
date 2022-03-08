@@ -1,0 +1,1887 @@
+body {
+  color: #646464;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Home Page CSS */
+
+.homepageHeader{
+  background-image: url("resources/assests/banner-bg.jpg");
+  height: auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.homepageNav{
+  margin-bottom: 120px;
+}
+
+.filter {
+  background-color: black;
+  opacity: 0.67;
+  padding-bottom: 1%;
+}
+
+.homepageNavbarLink {
+  width: 100%;
+  justify-content: end;
+  align-items: center;
+}
+
+.homepageNavbarLink > *{
+  margin-right: 1%;
+  width: auto;
+}
+
+@media screen and (max-width: 991px) {
+  .homepageNavbarLink > * {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 1%;
+  }
+}
+
+.homepageNavbarSpecial{
+  border: 1px solid #ffffff80;
+  border-radius: 20px;
+}
+
+.privacy {
+  background-color: black;
+  display: flex;
+}
+.privacy p {
+  text-align: center;
+  color: white;
+  font-size: smaller;
+  padding: 1% 12%;
+  width: 100%;
+}
+
+.privacy a {
+  color: white;
+}
+
+/* =================================================== */
+
+.mono {
+  margin-left: 50px;
+  color: white;
+}
+
+.mono img {
+  height: 11px;
+  margin-right: 5px;
+}
+
+.monoHeading {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.mono div p {
+  margin-left: 15px;
+}
+
+.navbar-brand {
+  margin-top: 10px;
+  margin-left: 17px;
+  max-width: 175px;
+  max-height: 130px;
+}
+
+.letsBook {
+  background-color: aquamarine;
+  margin: 0 auto;
+  display: block;
+  padding: 10px 35px;
+  border-radius: 100px;
+}
+
+.downArrow {
+  max-width: 45px;
+  margin-bottom: 2%;
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 5px;
+  justify-content: center;
+}
+
+.steps {
+  margin-top: 30px;
+  margin-left: 12%;
+  margin-right: 12%;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.arrow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.arrow img {
+  margin-top: 30%;
+}
+
+@media screen and (max-width: 891px) {
+  .arrow {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 892px) {
+  .steps div {
+    display: inline-block;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  .homepageNavbarLink li {
+    margin-right: 1%;
+    font-size: 15px;
+    margin-bottom: 2%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .customer {
+    display: block;
+  }
+
+  .customerCard {
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .steps div {
+    margin-bottom: 5%;
+  }
+}
+
+/* Why part */
+
+.why {
+  margin-top: 50px;
+}
+
+.why h1 {
+  text-align: center;
+}
+
+.points {
+  /* margin: auto 5%; */
+  justify-content: center;
+}
+
+.heading {
+  margin-top: 10%;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.subHeading {
+  text-align: center;
+  font-size: 0.7em;
+}
+
+.why img {
+  margin-left: 10%;
+  max-width: 80%;
+  border-radius: 50%;
+}
+
+/* Blog part */
+
+.blog {
+  box-sizing: border-box;
+}
+
+.blog h2 {
+  text-align: center;
+}
+
+.blogContent {
+  margin: 5% 0;
+}
+
+/*
+.blogCard {
+  box-shadow: 0px 0px 30px #e4ebf0;
+  border-radius: 4px;
+  opacity: 1;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-left: 2%;
+  width: 30%;
+} */
+
+/* .blogCard img {
+  max-height: 150px;
+} */
+
+.cardHeading {
+  margin-left: 5%;
+  margin-bottom: 0px;
+  font-size: medium;
+  font-weight: bolder;
+}
+
+.cardDate {
+  margin-left: 5%;
+  font-size: smaller;
+  font-weight: lighter;
+}
+
+.cardContent {
+  margin-left: 5%;
+}
+
+.readThePost {
+  margin-left: 5%;
+  font-weight: 550;
+  margin-bottom: 5%;
+}
+
+.readThePost img {
+  margin-left: 10px;
+}
+
+/* what part starts */
+
+.what {
+  background: #f4f5f8;
+  width: 100%;
+  justify-content: center;
+}
+
+.customer {
+  /* width: 80%; */
+  margin: 2% auto;
+  margin-bottom: 0;
+}
+
+.what h1 {
+  text-align: center;
+  padding-top: 2%;
+  font-weight: bolder;
+}
+
+.customerCard {
+  box-shadow: 0px 0px 30px #e4ebf0;
+  border-left: 2px solid rgb(81, 16, 143);
+  background-color: white;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-left: 3%;
+}
+
+.customerCardContent img {
+  border-radius: 50%;
+}
+
+.customerCardContent {
+  display: flex;
+}
+
+.customerContact {
+  margin-left: 85%;
+}
+
+.info {
+  margin-left: 5%;
+  margin-top: 3%;
+}
+
+.customerName {
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+
+.customerSay {
+  margin: 10% auto;
+}
+
+/* Newsletter */
+
+.newsletter {
+  padding: 3% 0;
+  background-color: #f4f5f8;
+  display: flex;
+}
+
+.backToTop img {
+  width: 40%;
+}
+
+.liveChat img {
+  width: 80%;
+}
+
+.newsletterContent {
+  width: 100%;
+  text-align: center;
+}
+
+.emailcol {
+  display: flex;
+  justify-content: center;
+}
+
+.text {
+  font-weight: bold;
+}
+
+.emailCol {
+  text-align: right;
+  margin-right: 1%;
+}
+.submitCol {
+  text-align: left;
+}
+
+.emailTextbox {
+  background: #f4f5f8;
+  border: 1px solid #565656;
+  border-radius: 20px;
+}
+.submitButton {
+  background: #ff7b6d;
+  border-radius: 20px;
+  opacity: 1;
+  color: white;
+  border-color: #ff7b6d;
+}
+
+@media screen and (max-width: 333px) {
+  .emailcol {
+    flex-direction: column;
+  }
+
+  .emailCol {
+    text-align: center;
+  }
+
+  .emailTextbox {
+    width: 90%;
+  }
+
+  .submitCol {
+    text-align: center;
+    margin-top: 2%;
+  }
+}
+
+/* footer */
+
+.footer {
+  background-color: black;
+  display: flex;
+  padding-top: 3%;
+}
+.links {
+  /* margin-left: 15%; */
+  margin-top: 3%;
+  margin-bottom: 2%;
+  width: 47%;
+  /* width: fit-content; */
+  /* justify-content: space-between; */
+  text-align: center;
+}
+
+.footer img {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 23%;
+}
+
+.socialLinks {
+  display: flex;
+  margin: 2% 6%;
+  margin-left: auto;
+}
+
+a:link {
+  text-decoration: none;
+  /* color: white; */
+}
+/* a:visited {
+  color: white;
+} */
+
+.links a {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.footer div a img {
+  margin-left: 10%;
+  width: 20px;
+}
+
+.footer div a {
+  color: white;
+}
+
+.footerLogo {
+  width: 25%;
+}
+
+@media screen and (max-width: 477px) {
+  .homepageFooterLink {
+    display: block;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footerLogo {
+    justify-content: center;
+    display: flex;
+  }
+
+  .footer img {
+    margin-left: 0;
+  }
+
+  .socialLinks {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .blogImage {
+    display: none;
+  }
+
+  .customerCard {
+    margin-bottom: 5%;
+  }
+}
+
+.blog-img {
+  width: 100%;
+}
+
+.blog-text {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 0px;
+  color: #3d4046;
+  margin-top: 16px;
+  margin-left: 19px;
+}
+.blog-sub-text {
+  font-size: 16px;
+  color: #565656;
+  margin-left: 19px;
+}
+.blog-date {
+  color: #a3a3a3;
+  margin-bottom: 12px;
+  font-size: 13px;
+  margin-left: 19px;
+}
+.read-post {
+  margin-left: 5px;
+  color: #4f4f4f;
+  font-size: 18px;
+}
+
+@media screen and (max-width:575px) {
+  .steps div{
+    margin-bottom: 2%;
+  }
+}
+
+/* ============================================FAQ page===================================================================== */
+
+/* faqNavbar */
+
+.faqHighlight {
+  border: 1px solid white;
+  background-color: #1d7a8c;
+  border-radius: 50px;
+}
+
+.faqNavbar {
+  background-color: #646464;
+  padding: 0 0;
+}
+
+.faqNavbarItems{
+  width: 100%;
+  justify-content: end;
+  align-items: center;
+}
+
+.faqNavbarItems > * {
+  text-align: center;
+  margin: 20px;
+}
+
+
+@media screen and (max-width: 991px) {
+  .faqNavbarItems > * {
+    width: 50%;
+    margin: 20px auto;
+  }
+}
+
+/* faqPoster */
+
+.faqPoster img {
+  max-width: 100%;
+}
+
+/* faqHeading */
+
+.faqHeading {
+  text-align: center;
+  margin-top: 2%;
+  font-size: 35px;
+}
+
+.faqContentHeading {
+  text-align: center;
+}
+
+/* faqs */
+
+.faqsContent {
+  max-width: 75%;
+  margin-left: 13%;
+}
+
+#contentCustomer {
+  background-color: #29626d;
+  padding: 1% 0;
+}
+
+#contentCustomer a {
+  color: white;
+  font-size: 25px;
+}
+
+#contentService {
+  background-color: #f4f5f8;
+  padding: 1% 0;
+}
+
+#contentService a {
+  color: black;
+  font-size: 25px;
+}
+
+.faqSwitch {
+  border-bottom: 5px solid #29626d;
+  margin: 5% 0;
+}
+
+#customerFaqs {
+  display: block;
+}
+
+#serviceFaqs {
+  display: none;
+}
+
+/* faqs */
+
+.bulletPoints {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.bulletPointsAns {
+  display: none;
+}
+
+/* faqprivacy */
+
+.horizontalLine {
+  background-color: black;
+}
+
+.faqPrivacy {
+  font-size: 14px;
+  text-align: center;
+  padding: 1% 0;
+  color: #9ba0a3;
+  background-color: black;
+}
+
+/* ============================================price page===================================================================== */
+
+.pricePoster img {
+  max-width: 100%;
+}
+
+.pricePrice {
+  margin-top: 2%;
+  text-align: center;
+}
+
+.priceType {
+  border: 1px solid #b0c9ce;
+  padding-bottom: 4%;
+  margin: 4% auto;
+  max-width: 553px;
+}
+
+.priceHeading {
+  font-size: 35px;
+  margin-bottom: 0;
+}
+
+.priceTypeHeading {
+  padding: 2% 0;
+  font-size: 28px;
+  color: white;
+  background-color: #1d7a8c;
+}
+
+.priceTypeBenifits {
+  text-align: left;
+  max-width: 70%;
+  margin-left: 20%;
+  justify-content: center;
+}
+
+.priceTypeBenifits div {
+  margin-bottom: 2%;
+}
+
+.priceExtraService {
+  border-top: 1px solid #dcdcdc;
+  text-align: center;
+  max-width: 80%;
+  margin-bottom: 5%;
+}
+
+.priceExtraType {
+  justify-content: center;
+  margin-top: 3%;
+}
+
+.priceExtraMainImg {
+  border: 1px solid #b0c9ce;
+  padding: 20%;
+  border-radius: 50%;
+  align-self: center;
+}
+
+.priceExtraWhere {
+  color: #646464;
+  font-size: 16px;
+  margin-bottom: 0;
+  margin-top: 5%;
+}
+
+.priceExtraMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) {
+  .priceExtraMainImg {
+    padding: 7%;
+  }
+
+  .priceWhyMain div {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .priceExtraMainImg {
+    padding: 20%;
+  }
+
+  #pricesExtraInsideWindows {
+    padding: 6%;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  #pricesExtraInsideWindows {
+    padding: 20%;
+  }
+}
+
+@media screen and (max-width: 363px) {
+  #pricesExtraInsideWindows {
+    padding: 8%;
+  }
+}
+
+@media screen and (max-width: 243px) {
+  #pricesExtraInsideWindows {
+    padding: 20%;
+  }
+}
+.priceExtraWhereTime {
+  color: #1d7a8c;
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+
+.priceWhatWe {
+  text-align: center;
+  background-color: #f6f6f6;
+  padding: 5% 0;
+}
+
+.priceWhatWeMain {
+  margin-top: 4%;
+  max-width: 80%;
+  margin-left: 10%;
+}
+
+.pricesWhatImages {
+  min-width: 100%;
+}
+
+.priceWhatWeMainPart img {
+  max-width: 100%;
+}
+
+.priceWhatWeBenifite {
+  text-align: left;
+  margin-top: 5%;
+}
+
+.priceWhatWeTypeHeading {
+  color: #4f4f4f;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.priceWhatWeContent {
+  color: #4f4f4f;
+  font-size: 14px;
+  margin: 2% 0;
+}
+
+.priceWhy {
+  padding: 5% 0;
+  text-align: center;
+}
+
+.priceWhyMain {
+  margin-top: 3%;
+  max-width: 90%;
+  margin-left: 5%;
+}
+
+.priceWhyHeading {
+  margin-bottom: 0;
+  color: #646464;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.priceWhyPara {
+  color: #646464;
+  font-size: 14px;
+}
+
+.priceWhypart2 {
+  margin-bottom: 8%;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) {
+  .priceWhatWeMainPart {
+    margin-bottom: 4%;
+  }
+}
+
+/* ============================================contact us page===================================================================== */
+
+.contactUs {
+  text-align: center;
+  margin: 3% 0;
+}
+
+.contactUsHeading {
+  font-size: 35px;
+  margin-bottom: 0;
+}
+
+.contactUsMain {
+  max-width: 80%;
+  margin-left: 10%;
+  margin-top: 3%;
+}
+
+.contactUsWhere {
+  margin-top: 4%;
+}
+
+.contactUsWhere p {
+  margin-bottom: 0;
+  color: #4f4f4f;
+  font-size: 16px;
+}
+
+.contactTouch {
+  border-top: 1px solid #e1e1e1;
+  max-width: 80%;
+  margin-left: 10%;
+  margin-bottom: 5%;
+}
+
+.contactTouchHeading {
+  text-align: center;
+  font-size: 28px;
+  color: #4f4f4f;
+  margin-top: 4%;
+  font-weight: bold;
+}
+
+.contactTouchForm {
+  text-align: center;
+}
+
+.contactTouchForm input {
+  border: 1px solid #c8c8c8;
+  border-radius: 4px;
+  padding: 8px;
+  margin-bottom: 1%;
+  width: 300px;
+  max-width: 100%;
+}
+
+.contactTouchForm textarea {
+  border: 1px solid #c8c8c8;
+  border-radius: 4px;
+  padding: 8px;
+  width: 605px;
+  max-width: 100%;
+}
+
+#subject {
+  border: 1px solid #c8c8c8;
+  border-radius: 4px;
+  padding: 8px;
+  width: 605px;
+  max-width: 100%;
+  margin-bottom: 1%;
+}
+
+#fname{
+  margin-right: 0.5%;
+}
+
+#mnumber{
+  margin-right: 0.5%;
+}
+
+.contactTouchForm button {
+  background: #1d7a8c 0% 0% no-repeat padding-box;
+  border-radius: 23px;
+  color: #ffffff;
+  padding: 2px 3%;
+}
+
+@media screen and (max-width: 787px) {
+  .contactTouchForm input {
+    width: 600px;
+  }
+}
+
+/* ============================================about page===================================================================== */
+
+.aboutPoster img {
+  width: 1380px;
+  max-width: 100%;
+}
+
+.aboutWord {
+  margin: 5% 0;
+  text-align: center;
+  max-width: 60%;
+  margin-left: 20%;
+}
+
+.aboutContent {
+  margin-top: 3%;
+}
+
+.aboutStory {
+  max-width: 60%;
+  text-align: center;
+}
+
+/* ============================================pro page===================================================================== */
+
+/* .register-section {
+  position: absolute;
+  top: 180px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+} */
+/* 
+@media screen and (max-width: 750px) {
+  .register-section {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .blogImage{
+    display: none;
+  }
+} */
+
+.proRegister {
+  max-width: 415px;
+  background-color: white;
+  text-align: center;
+}
+
+.proRegister input {
+  width: 350px;
+  margin-bottom: 5%;
+  height: 40px;
+  max-width: 100%;
+}
+
+.proRegisterHeading {
+  color: #4f4f4f;
+  font-size: 24px;
+  padding-top: 2%;
+}
+
+.proNavbarArrow {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.proContent {
+  margin: 30px 0;
+}
+
+.proHow {
+  margin: 0 auto;
+  margin-left: 15%;
+  width: 80%;
+}
+
+.proRow {
+  max-width: 100%;
+  margin-bottom: 2%;
+}
+
+.proHowHeading {
+  color: #353548;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.proMain {
+  padding-top: 5%;
+  padding-left: 5%;
+}
+
+@media screen and (max-width: 767px) {
+  .proMain {
+    text-align: center;
+  }
+
+  .proImage {
+    margin: 0 auto;
+    /* width: 100%; */
+  }
+
+  .proHow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .proRegister {
+    margin: 0 4%;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .proImage{
+    width: 100%;
+  }
+}
+
+/* ============================================service page===================================================================== */
+
+.serviceWelcome {
+  padding-top: 2%;
+  padding-bottom: 1%;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.serviceWelcome p {
+  color: #4f4f4f;
+  font-size: 30px;
+}
+
+.serviceWelcome span {
+  font-weight: bold;
+}
+
+.serviceMain {
+  width: 100%;
+  margin: 0 auto;
+  padding: 2% 5%;
+}
+
+.serviceMenu {
+  /* margin-right: 2%; */
+  color: white;
+  background-color: #1d7a8c;
+}
+
+.serviceMenu a {
+  /* margin-bottom: 3%; */
+  border-bottom: 1px solid #e1e1e1;
+  text-align: left;
+  font-size: 16px;
+  padding: 6%;
+  color: white;
+}
+
+.serviceTable {
+  max-width: 100%;
+}
+
+#serviceone {
+  background-color: #29626d;
+}
+#two {
+  display: none;
+}
+#three {
+  display: none;
+}
+#four {
+  display: none;
+}
+#five {
+  display: none;
+}
+#six {
+  display: none;
+}
+#seven {
+  display: none;
+}
+
+.serviceMainTable {
+  border: 1px solid #e1e1e1;
+  width: 100%;
+}
+
+thead {
+  background-color: #f9f9f9;
+}
+
+th {
+  padding: 2% 0;
+}
+
+tr {
+  border-bottom: 1px solid #e1e1e1;
+}
+
+td button {
+  background-color: #ff6b6b;
+  color: white;
+  border-radius: 17px;
+  border: 1px solid #ff6b6b;
+}
+
+td img {
+  max-width: 12%;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #1d7a8c;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #2980b9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.servicedropdown {
+  position: relative;
+  display: none;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 96%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .serviceMenu {
+    display: none;
+  }
+  .servicedropdown {
+    display: block;
+    margin-bottom: 2%;
+  }
+
+  .serviceMainTable thead {
+    display: none;
+  }
+
+  .serviceMainTable {
+    border: none;
+  }
+
+  .serviceMainTable tr {
+    display: block;
+    box-shadow: 3px 5px 5px 5px #c4c2c2;
+    margin-bottom: 5%;
+    border: none;
+    padding: 2%;
+  }
+
+  .serviceMainTable td {
+    display: block;
+    border-bottom: 1px solid #e1e1e1;
+  }
+}
+
+.cancelButton:hover{
+  background-color: #f73232;
+}
+
+/* ============================================service history page===================================================================== */
+
+.serviceTableHeading {
+  color: #646464;
+  font-size: 22px;
+  padding: 1% 0;
+}
+
+.serviceTableHeading button {
+  padding: 1% 3%;
+  background-color: #146371;
+  border: 1px solid #146371;
+  border-radius: 17px;
+  color: white;
+  font-size: 14px;
+}
+
+.complete {
+  background-color: #68b744;
+  border: 1px solid #68b744;
+  font-size: 14px;
+  border-radius: 0;
+}
+
+.complete:hover{
+  background-color:#519136;
+}
+
+.incomplete:hover{
+  background-color: #ff3838;
+}
+
+.incomplete {
+  background-color: #ff6b6b;
+  font-size: 14px;
+  border-radius: 0;
+}
+
+.rateSP {
+  background-color: #6da9b6;
+  border: 1px solid #6da9b5;
+  font-size: 14px;
+}
+
+.rateSP:hover{
+  background-color: #50929f;
+}
+
+.payment {
+  color: RGB(37, 119, 135);
+  font-size: 24px;
+  font-weight: bold;
+  padding-left: 2%;
+}
+
+.blackHat {
+  max-width: 20%;
+}
+
+.page-item a:hover {
+  background-color: #1d7a8c;
+  color: white;
+}
+
+.page-item a {
+  color: black;
+  border-radius: 50%;
+}
+
+.page-item {
+  margin-right: 3px;
+}
+
+.serviceHistoryPagination{
+  margin-top: 2%; 
+  display: flex;
+}
+
+@media screen and (max-width:991px) {
+  .blackHat{
+    margin-right: 8%;
+  }
+}
+
+@media screen and (max-width:561px) {
+  .serviceHistoryPagination{
+    flex-direction: column;
+  }
+}
+
+/* ============================================user management page===================================================================== */
+
+.userTableMenu {
+  box-shadow: 2px 0px 6px #0000001a;
+}
+
+.userMenu {
+  padding-left: 0;
+}
+
+.userMenu img {
+  padding-top: 2%;
+  float: right;
+}
+
+.userMenu li {
+  border: 1px solid #f2f2f2;
+  border-top: none;
+  border-right: none;
+  list-style: none;
+  padding: 3%;
+}
+
+.userMenu li a {
+  font-size: 16px;
+  color: #646464;
+}
+
+.userTable {
+  background-color: #f3f4f6;
+  width: 81%;
+  margin-left: 4px;
+}
+
+.userTableMenu {
+  padding-right: 0px;
+  width: 18%;
+}
+
+.userTableHeading {
+  color: #646464;
+  font-size: 22px;
+  padding: 1% 0;
+  font-weight: bold;
+}
+
+.userTableHeadingButton {
+  text-align: end;
+}
+
+.userTableHeadingButton button {
+  padding: 1% 2%;
+  background-color: #1fb6ff;
+  border-radius: 4px 4px 4px 4px;
+  color: white;
+  font-size: 14px;
+  border: 1px solid #1fb6ff;
+}
+
+@media screen and (max-width: 575px) {
+  .userTableHeadingText {
+    text-align: center;
+  }
+
+  .userTableHeadingButton {
+    text-align: center;
+  }
+}
+
+.filterSearch {
+  background-color: #1fb6ff;
+  border-radius: 4px 4px 4px 4px;
+  color: white;
+  font-size: 14px;
+  border: 1px solid #1fb6ff;
+}
+
+.userFilter {
+  background-color: White;
+  padding: 15px;
+  margin-bottom: 3%;
+}
+
+.userMainTable {
+  border: 1px solid #e1e1e1;
+  width: 100%;
+}
+
+.userMainTable tbody {
+  background-color: white;
+}
+
+.active {
+  border-radius: 0px;
+  border: 1px solid #67b644;
+  background-color: #67b644;
+  color: #ffffff;
+  font-size: 13px;
+  padding: 4px 11px 5px 11px;
+}
+
+.active:hover{
+  background-color:#519136;
+}
+
+.inactive {
+  border-radius: 0px;
+  border: 1px solid #ff6b6b;
+  background-color: #ff6b6b;
+  color: #ffffff;
+  font-size: 13px;
+  padding: 4px 11px 5px 11px;
+}
+
+.inactive:hover{
+  background-color: #ff3838;
+}
+
+.userMoreAction {
+  padding: 10px 11px;
+  border-radius: 50%;
+}
+
+.userMoreAction img {
+  max-width: 37%;
+}
+
+.moreAction button {
+  border: none;
+  background-color: white;
+}
+
+.moreActionSubMenu {
+  box-shadow: 0px 0px 6px #00000040;
+  border-radius: 4px;
+  min-width: fit-content;
+}
+
+.moreActionSubMenu li {
+  width: 100px;
+}
+
+.moreActionSubMenu li a {
+  padding-left: 5%;
+  color: #646464;
+}
+
+.userMoreAction:hover {
+  background-color: #f4f4f4;
+}
+
+.userPagination li a {
+  border-radius: 0px;
+}
+
+.userPagination li {
+  margin-right: 0;
+}
+
+.userManagementMoreButton:focus {
+  box-shadow: none;
+}
+
+.userFooter {
+  display: flex;
+  background-color: white;
+  padding-top: 2%;
+  padding-right: 2%;
+  padding-left: 2%;
+  border: 1px solid #e1e1e1;
+  border-top: none;
+  margin-left: 0px;
+  width: 100%;
+}
+
+.userCopyright {
+  color: #a2a6a8;
+  font-size: 14px;
+  padding: 2% 0;
+}
+
+#couponCodeSubMenu {
+  display: none;
+  background-color: #f9f9f9;
+}
+
+#couponCodeSubMenu li {
+  border: none;
+}
+
+#financeSubMenu {
+  display: none;
+  background-color: #f9f9f9;
+}
+
+#financeSubMenu li {
+  border: none;
+}
+
+#contentSubMenu {
+  display: none;
+  background-color: #f9f9f9;
+}
+
+#contentSubMenu li {
+  border: none;
+}
+
+.userMenuSelect {
+  border: 1px solid #1fb6ff;
+  margin: 1% 0%;
+  background-color: #1fb6ff;
+  color: white;
+  width: 80%;
+  text-align: center;
+  margin-left: 10%;
+}
+
+.userMenuSelect option {
+  color: black;
+  background-color: white;
+}
+
+.entiresSelect {
+  color: #646464;
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+  max-width: fit-content;
+  margin: 0% 2%;
+  margin-bottom: 1%;
+}
+
+.toggleBUttonTemp {
+  color: white;
+  background: #1fb6ff;
+  border: 1px solid #1fb6ff;
+}
+
+@media screen and (max-width: 1000px) {
+  .userTableMenu {
+    display: none;
+    position: absolute;
+    width: fit-content;
+  }
+  .userTable {
+    width: 100%;
+  }
+  .userMenu {
+    background: white;
+  }
+}
+
+@media screen and (min-width: 1001px) {
+  .toggleBUttonTemp {
+    display: none;
+  }
+
+  .userTableMenu {
+    position: relative;
+    display: block !important;
+  }
+}
+
+@media screen and (min-width: 898px) {
+  .userManagementFormButton {
+    margin-top: auto;
+  }
+}
+
+@media screen and (max-width: 897px) {
+  #userManagementForm {
+    display: flex;
+    justify-content: center;
+  }
+
+  #userManagementFormDiv {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  #userManagementFormDiv div {
+    margin-bottom: 1%;
+  }
+
+  .userManagementFormButton {
+    width: 100%;
+  }
+
+  .userManagementFormButton a {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:430px) {
+  .serviceRequestName{
+    display: none;
+  }
+}
+
+/* ============================================Service request page===================================================================== */
+
+.serviceRequestProvider {
+  padding-top: 2%;
+}
+
+.new {
+  background-color: #f2bb37;
+  color: white;
+  border: none;
+  border-radius: 0px;
+  font-size: 14px;
+}
+
+.new:hover{
+  background-color: #e6a50f;
+}
+
+.pending {
+  background-color: #1fb6ff;
+  color: white;
+  border: none;
+  border-radius: 0px;
+  font-size: 14px;
+}
+
+.pending:hover{
+  background-color: #009ceb;
+}
+
+.serviceRequestProviderRating {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 897px) {
+  #serviceRequestForm {
+    display: flex;
+    justify-content: center;
+  }
+
+  #serviceRequestFormDiv {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  #serviceRequestFormDiv div {
+    margin-bottom: 1%;
+  }
+
+  .serviceRequestFormButton {
+    width: 100%;
+  }
+
+  .serviceRequestFormButton a {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 835px) {
+  .userMainTable thead {
+    display: none;
+  }
+
+  .userMainTable {
+    border: none;
+  }
+
+  .userMainTable tr {
+    display: block;
+    box-shadow: 3px 5px 5px 5px #c4c2c2;
+    border: none;
+    padding: 2%;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 5%;
+  }
+
+  .userMainTable td {
+    display: block;
+    border-bottom: 1px solid #e1e1e1;
+  }
+}
+
+/* ============================================Book service page===================================================================== */
+
+.bookServiceMenu {
+  background: #f3f3f3;
+  /* padding: 1% 0; */
+}
+
+.bookServiceMenu div {
+  padding: 1% 0;
+}
+
+.bookServiceMenu a {
+  color: #646464;
+  font-size: 18px;
+  padding: 5% 0;
+}
+
+.currentMenu {
+  background: #1d7a8c;
+}
+
+.currentMenu a {
+  color: white;
+}
+
+.bookServiceSelect p {
+  color: #646464;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 0;
+  margin-top: 1rem;
+}
+
+/* .bookServiceSelect div{
+  max-width: fit-content;
+} */
+
+.bookServiceSelect select {
+  width: fit-content;
+  font-size: 12px;
+}
+
+.bookServiceSelect {
+  padding-bottom: 3%;
+  border-bottom: 2px solid #f3f3f3;
+}
+
+.bookServiceTime p {
+  color: #646464;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 0;
+  margin-top: 1rem;
+}
+
+.bookServiceTime select {
+  width: fit-content;
+  font-size: 12px;
+}
+
+.bookServiceTime {
+  padding-bottom: 3%;
+  border-bottom: 2px solid #f3f3f3;
+}
+
+.bookServiceExtraHeading {
+  color: #646464;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 0;
+  margin-top: 1rem;
+}
+
+.priceExtraMainImgActive {
+  border: 3px solid #1d7a8c;
+  padding: 20%;
+  border-radius: 50%;
+  align-self: center;
+}
+
+.priceExtraWhereService {
+  color: #646464;
+  text-align: center;
+}
+
+.bookServiceExtra {
+  padding-bottom: 3%;
+  border-bottom: 2px solid #f3f3f3;
+}
+
+.bookServiceCommentHeading {
+  color: #646464;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 0;
+  margin-top: 1rem;
+}
+
+.bookServiceComment {
+  padding-bottom: 3%;
+  border-bottom: 2px solid #f3f3f3;
+}
+
+.bookServiceComment textarea {
+  width: 100%;
+  border: 1px solid #c8c8c8;
+  border-radius: 4px;
+}
+
+.bookServiceCheckbox {
+  font-size: 14px;
+}
+
+.bookServiceContinue {
+  padding-top: 2%;
+}
+
+.bookServiceContinue button {
+  float: right;
+  background: #1d7a8c;
+  border-radius: 23px;
+  border: 1px solid #1d7a8c;
+  color: white;
+  padding: 1% 5%;
+}
+
+.bookServicePayment {
+  width: 100%;
+  box-shadow: 0px 0px 7px #00000059;
+}
+
+.bookServicePaymentHeading {
+  background: #1d7a8c;
+  color: white;
+  font-size: 18px;
+  padding: 3%;
+}
+
+.durationHeading {
+  color: #646464;
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 1rem;
+  padding-left: 3%;
+}
+
+.bookServiceTotalTime {
+  font-weight: bold;
+}
+
+.bookQuestions {
+  border-bottom: 2px solid #f3f3f3;
+}
+
+.bookServicebulletPoints {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.bookServicebulletPointsAns {
+  display: none;
+  font-size: 12px;
+}
+
+.bookServiceMain {
+  width: 65%;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .bookServiceMain {
+    width: 100%;
+    margin-bottom: 5%;
+    /* border: 1px solid blue; */
+  }
+
+  .priceExtraMainImg {
+    padding: 19%;
+  }
+}
+
+@media screen and (max-width: 418px) {
+  .priceExtraType > div:nth-of-type(5) > div:first-child {
+    padding: 4%;
+  }
+}
+
+@media screen and (max-width: 324px) {
+  .priceExtraType > div:nth-of-type(5) > div:first-child {
+    padding: 19%;
+  }
+}
+
+@media screen and (max-width: 235px) {
+  .priceExtraType > div:nth-of-type(5) > div:first-child {
+    padding: 9%;
+  }
+}
