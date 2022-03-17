@@ -1,6 +1,11 @@
-import React from "react";
+import React,{ useState } from "react";
+
+import Login from "./Login"
+import LoginContent from "./LoginContent"
+
 import {Navbar,Nav} from 'react-bootstrap';
 import Logo from '../resources/assests/logo.png';
+import arrow from '../resources/assests/arrow.png';
 import CheckBox from "../resources/assests/checkbox-check-grey.svg";
 import Step1 from "../resources/assests/step-1.png";
 import Step2 from "../resources/assests/step-2.png";
@@ -10,12 +15,20 @@ import UpArrow from "../resources/assests/how-it-works-up-arrow.png";
 import DownArrow from "../resources/assests/how-it-works-down-arrow.png";
 // import ScrollButton from "../resources/assests/down-arrow.svg";
 
-function navbar() {
+function CNavbar() {
+
+  const [isOpen, setIsOpen] = useState(false);
+ 
+  const togglePopup = () => {
+    setIsOpen(!isOpen);
+  }
+
+
   return (
     <div className="homepageHeader">
       <div className="filter">
         <Navbar bg="" expand="lg" className="homepageNav">
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="/">
             <img
               src={Logo}
               alt=""
@@ -35,7 +48,7 @@ function navbar() {
               >
                 Book now
               </Nav.Link>
-              <Nav.Link href="#link" style={{ color: "white" }}>
+              <Nav.Link href="/price" style={{ color: "white" }}>
                 Prices & Services
               </Nav.Link>
               <Nav.Link href="#home" style={{ color: "white" }}>
@@ -51,6 +64,7 @@ function navbar() {
                 href="#home"
                 style={{ color: "white" }}
                 className="homepageNavbarSpecial"
+                onClick={togglePopup}
               >
                 Login
               </Nav.Link>
@@ -64,7 +78,9 @@ function navbar() {
             </Nav>
           </Navbar.Collapse>
         </Navbar>
-
+        <Login trigger={isOpen} setTrigger={setIsOpen}>
+          <LoginContent/> 
+        </Login>
         <div className="mono">
           <div className="col">
             <p className="monoHeading">
@@ -97,7 +113,7 @@ function navbar() {
 
         <div style={{marginBottom:'10%', marginTop:'4%'}}>
 				<div className="col">
-					<button className="letsBook">Let's Book a Cleaner</button>
+					<button className="letsBook"><a href="/book-a-service" style={{color:'black'}}>Let's Book a Cleaner</a></button>
 				</div>
 			  </div>
 			  
@@ -140,4 +156,4 @@ function navbar() {
   );
 }
 
-export default navbar;
+export default CNavbar;

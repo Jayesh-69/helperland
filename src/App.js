@@ -8,11 +8,15 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
+import SignUp from "./components/SignUp";
+
 import Homepage from "./Homepage/Homepage";
 import Price from "./Prices/Price";
 import AboutUs from "./AboutUs/AboutUs";
 import ContactUs from "./ContactUs/ContactUs";
 import Faqs from "./Faqs/Faqs";
+import BecomeAPro from "./BecomeAPro/BecomeAPro";
+import BookAService from "./BookAService/BookAService";
 
 const App = () => {
   return (
@@ -23,6 +27,9 @@ const App = () => {
         <Route path="/about-us" element={<AboutUs />}></Route>
         <Route path="/contact-us" element={<ContactUs />}></Route>
         <Route path="/faq" element={<Faqs />}></Route>
+        <Route path="/pro" element={<BecomeAPro />}></Route>
+        <Route path="/sign-up" element={<SignUp />}></Route>
+        <Route path="/book-a-service" element={<BookAService />}></Route>
       </Routes>
     </Router>
   );

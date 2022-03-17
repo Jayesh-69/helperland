@@ -1,3 +1,48 @@
+/* Login popups */
+
+/* Popup style */
+.popup-box {
+  position: fixed;
+  background: #00000050;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.box {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+  height: auto;
+  /*max-height: 70vh;*/
+  margin-top: calc(100vh - 85vh - 20px);
+  background: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  border: 1px solid #999;
+  overflow: auto;
+}
+
+.close-icon {
+  content: 'x';
+  cursor: pointer;
+  position: fixed;
+  right: calc(38% - 30px);
+  top: calc(100vh - 85vh - 33px);
+  background: #ededed;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  line-height: 20px;
+  text-align: center;
+  border: 1px solid #999;
+  font-size: 20px;
+}
+
+/* =============================== */
+
+
 body {
   color: #646464;
   font-size: 16px;
@@ -891,6 +936,10 @@ a:link {
   margin-right: 0.5%;
 }
 
+#password{
+  margin-right: 0.5%;
+}
+
 .contactTouchForm button {
   background: #1d7a8c 0% 0% no-repeat padding-box;
   border-radius: 23px;
@@ -901,6 +950,10 @@ a:link {
 @media screen and (max-width: 787px) {
   .contactTouchForm input {
     width: 600px;
+  }
+
+  .box{
+    width: 50%;
   }
 }
 
@@ -950,6 +1003,21 @@ a:link {
     display: none;
   }
 } */
+
+.propageHeader{
+  background-image: url("resources/assests/become-a-pro-banner.png");
+  height: auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.profilter {
+  /* /* background-color: black;
+  opacity: 0.4; */
+  padding-bottom: 1%;
+}
 
 .proRegister {
   max-width: 415px;
@@ -1396,7 +1464,7 @@ td img {
   background-color: white;
 }
 
-.active {
+/* .active {
   border-radius: 0px;
   border: 1px solid #67b644;
   background-color: #67b644;
@@ -1407,7 +1475,7 @@ td img {
 
 .active:hover{
   background-color:#519136;
-}
+} */
 
 .inactive {
   border-radius: 0px;
@@ -1688,6 +1756,22 @@ td img {
 }
 
 /* ============================================Book service page===================================================================== */
+
+#menu1{
+  display: none;
+}
+
+#menu2{
+  display: block;
+}
+
+#menu3{
+  display: none;
+}
+
+#menu4{
+  display: none;
+}
 
 .bookServiceMenu {
   background: #f3f3f3;
